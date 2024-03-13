@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/NavBar.module.css'
+import Image from 'next/image';
 
 
 const NavBar = () => {
@@ -12,7 +13,7 @@ const NavBar = () => {
         <div className={styles.container}>
           <div className={styles.logo}>
             <Link href="/" legacyBehavior>
-              <a>Logo</a>
+              <Image src="/Logo.jpg" alt="Company Logo" width={150} height={75} />  
             </Link>
           </div>
 

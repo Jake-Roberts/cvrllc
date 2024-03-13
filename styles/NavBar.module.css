@@ -1,9 +1,9 @@
 .navbar {
-    height: 50px;
+    height: 75px;
     padding: 0 20px 10px 20px;
     /* display: flex; */
     align-items: center;
-    background-color: transparent; /* Adjust color to match Kiewit's */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust color to match Kiewit's */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -12,7 +12,7 @@
 
   .nav {
     display: flex;
-    color: #fff;
+    color: transparent;
   }
 
   .nav.open {
@@ -26,10 +26,7 @@
     padding: 0 20px;
   }
 
-  .logo a {
-    font-weight: bold;
-    color: white; /* Adjust logo color */
-  }
+  
   
   .nav ul {
     list-style: none;
@@ -41,7 +38,7 @@
   .nav li a {
     display: block;
     padding: 15px 40px;
-    color: #fff; /* Adjust link color */
+    color: #0a0909; /* Adjust link color */
     text-decoration: none;
   }
   
@@ -85,7 +82,7 @@
       height: 100vh;
       top: 0;
       left: 0;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(10, 10, 10, 0.95);
       transform: translateX(-100%); /*start off-screen*/
       transition: transform 0.3s ease-in-out;
       

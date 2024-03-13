@@ -1,0 +1,71 @@
+.hero {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make hero section full viewport height */
+    background-color: transparent;
+    position: relative; /* Needed if you plan to absolutely position any child elements */
+  }
+
+  .ctaForm form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 20px; /* Spacing between form and hero content */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+.ctaForm input[type="text"],
+.ctaForm input[type="tel"],
+.ctaForm input[type="email"] {
+    margin-bottom: 10px; /* Spacing between inputs */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+}
+
+.ctaForm button {
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  .heroContent {
+    text-align: center; /* Center the text inside the hero content */
+    background-color: transparent;
+    /* Add padding or margins as necessary */
+  }
+
+  
+
+  .heroContent button {
+    background-color: gold; /* Sets the button background to gold */
+    color: #000; /* Sets the button text color to contrast, e.g., black */
+    border: none; /* Removes any default border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .heroH1 {
+    color: white;
+    font-size: 55px;
+    
+    
+
+  }
+
+  .heroP {
+    color: gold;
+    font-size: 25px;
+  }
+
+  
+  .heroButton:hover {
+    background-color: darkgoldenrod; /* Darker gold color on hover for better interaction feedback */
+  }
