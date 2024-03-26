@@ -1,9 +1,11 @@
+/* NavBar.module.css */
 .navbar {
-    height: 75px;
+    height: 80px;
     padding: 0 20px 10px 20px;
-    /* display: flex; */
+    display: flex; 
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust color to match Kiewit's */
+    justify-content: space-between;
+    /* background-color: rgba(2, 2, 2, 0.5); Adjust color to match Kiewit's */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -12,34 +14,54 @@
 
   .nav {
     display: flex;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    height: 30vh;
+    width: 250px;
+    background: rgba(2, 2, 2, 0.5);
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: transparent;
+    border-radius: 5px;
+    opacity: 0;
+
   }
 
   .nav.open {
-    display: block;
+    opacity: 100%;
   }
   
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    width: 100%;
+    
   }
 
   
   
   .nav ul {
+    width: 100%;
+    text-align: center;
     list-style: none;
-    display: flex;
     margin: 0;
-    padding: 0;
+    padding: 60px 0 ;
+  }
+  
+  .nav li {
+    margin: 20px;
   }
   
   .nav li a {
-    display: block;
-    padding: 15px 40px;
-    color: #0a0909; /* Adjust link color */
     text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    
   }
   
   .nav.open {
@@ -52,11 +74,11 @@
   }
 
   .hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 30px;
-    height: 25px;
+    width: 40px;
+    height: 35px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -67,43 +89,55 @@
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #333;
+    background-color: gold;
     border-radius: 3px;
+    transition: all 0.3s ease-in-out;
     
   }
 
+  /* Transform first line to "X" */
+.hamburger.change span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+/* Hide middle line */
+.hamburger.change span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px); /* Ensures it moves out of sight */
+}
+
+/* Transform last line to "X" */
+.hamburger.change span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+}
 
   
+  
+
   @media (max-width: 768px) {
     .nav {
-      display: none;
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      background-color: rgba(10, 10, 10, 0.95);
-      transform: translateX(-100%); /*start off-screen*/
-      transition: transform 0.3s ease-in-out;
-      
+      width: 200px; /* Smaller width for smaller screens */
+      top: 70px; /* Adjust if your NavBar height changes on smaller screens */
     }
   
-    .nav.open {
-      display: flex; /*show navigation links when hamburger is clicked */
-      flex-direction: column; /*Stack links vertically */
-      position: absolute; /* position the menu over the content */
-      top: 65px; /*adjust the value to the height of nav bar */
-      left: 0;
-      right: 0;
-      background-color: #fff; /* background for the menu when open*/
-    }
-
     .hamburger {
+      /* Ensure the hamburger icon is visible and properly positioned on smaller screens */
       display: flex;
     }
   
-    .mobile-nav-toggle {
-      size: 30px;
-      display: block; 
+    /* Additional responsive adjustments as needed */
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      width: 100%; /* Full width for very small screens */
+      top: 0; /* Start from the top */
+      height: 100vh; /* Optional: Make the menu full-height */
+      transform: translateY(-100%); /* Hide above the viewport initially */
+    }
+  
+    .nav.open {
+      transform: translateY(0); /* Slide down */
     }
   }
+  

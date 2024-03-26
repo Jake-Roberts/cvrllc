@@ -1,21 +1,77 @@
+/* Hero.module.css */
 .hero {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Make hero section full viewport height */
-    background-color: transparent;
-    position: relative; /* Needed if you plan to absolutely position any child elements */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 50vh; /* Adjusted to 50% of the viewport height */
+  text-align: center; /* Center the text content */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  position: relative; /* For positioning elements inside absolutely if needed */
+  color: #fff; /* Text color */
+  padding: 20px; /* Ensures content does not touch the edges */
+}
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text inside the hero content */
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(17, 17, 17, 0.7);
+    border-radius: 10px;
+    margin: auto;
+    /* Add padding or margins as necessary */
+  }
+
+  
+
+  .heroContent button {
+    background-color: gold; /* Sets the button background to gold */
+    font-weight: bold;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000; /* Sets the button text color to contrast, e.g., black */
+    border: none; /* Removes any default border */
+    padding: 15px 30px; /* Adjust padding as needed */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .heroH1 {
+    color: white;
+    font-size: 35px;
+    height: auto;
+
+  }
+
+  .heroP {
+    color: gold;
+    font-size: 20px;
+  }
+
+  
+  .heroButton:hover {
+    background-color: darkgoldenrod; /* Darker gold color on hover for better interaction feedback */
   }
 
   .ctaForm form {
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 300px;
     margin-bottom: 20px; /* Spacing between form and hero content */
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    background: rgba(17, 17, 17, 0.7); /* Semi-transparent background */
     padding: 20px;
     border-radius: 5px;
   }
+  
 
 .ctaForm input[type="text"],
 .ctaForm input[type="tel"],
@@ -34,38 +90,3 @@
     border-radius: 5px;
     cursor: pointer;
 }
-  
-  .heroContent {
-    text-align: center; /* Center the text inside the hero content */
-    background-color: transparent;
-    /* Add padding or margins as necessary */
-  }
-
-  
-
-  .heroContent button {
-    background-color: gold; /* Sets the button background to gold */
-    color: #000; /* Sets the button text color to contrast, e.g., black */
-    border: none; /* Removes any default border */
-    padding: 10px 20px; /* Adjust padding as needed */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-  }
-
-  .heroH1 {
-    color: white;
-    font-size: 55px;
-    
-    
-
-  }
-
-  .heroP {
-    color: gold;
-    font-size: 25px;
-  }
-
-  
-  .heroButton:hover {
-    background-color: darkgoldenrod; /* Darker gold color on hover for better interaction feedback */
-  }

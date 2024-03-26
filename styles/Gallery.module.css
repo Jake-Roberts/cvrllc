@@ -1,0 +1,78 @@
+ 
+/* Gallery.module.css */
+.container{
+  display: flexbox;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.ourWork {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.embla {
+  border-color: black;
+  border: 10px;
+  display: flex;
+  max-width: 50%; /* Adjust based on wireframe */
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 auto; /* Adjust based on your design, use percentage to control size */
+}
+
+.embla__image {
+  width: auto;
+  height: 350px; /* Maintain aspect ratio */
+  max-width: 100%;
+  object-fit: cover; /* Cover the slide area without stretching */
+}
+
+/* Add this inside .embla__slide or as a new element style */
+.embla__overlay {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+}
+
+.customArrow {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-25%);
+  z-index: 2; 
+   
+}
+
+.nextArrow {
+  right: 10px;
+}
+
+.prevArrow {
+  left: 10px;
+}
+
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

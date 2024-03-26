@@ -1,10 +1,28 @@
 /* globals.css */
 html, body {
+  display: flexbox;
   margin: 0;
   padding: 0;
-  background-image: url('../../public/hero.roofing.jpg'); /* Path to your background image */
+  background-image: url('../../public/background1.JPG'); /* Path to your background image */
   background-size: cover; /* Cover the entire page */
   background-attachment: fixed; /* Make background fixed during scroll */
   background-position: center; /* Center the background image */
   height: 100%; /* Ensure full height */
 }
+
+/* main {
+  padding: 15px 0 15px 0;
+  display: flexbox;
+  
+}
+
+.hero {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flexbox;
+} */
+
+
+
+
+
