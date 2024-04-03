@@ -1,0 +1,74 @@
+/* Adjust the base layout for the OurMission section */
+.ourMission {
+  display: flex;
+  height: auto;
+  flex-direction: row; /* Allows items to wrap on smaller screens */
+  align-items: center; /* Vertically aligns children if there's extra space */
+  justify-content: center; /* Horizontally centers children in the container */
+  gap: 20px; /* Optional: Adds space between the image and text */
+  width: 100%;
+  background-color: rgb(49, 48, 48);
+}
+
+/* Style adjustments for the missionImage */
+.missionImage {
+  flex: 1; /* Takes up half of the space */
+  max-width: 50%; /* Ensures it doesn't grow beyond half the container's width */
+  
+}
+
+.missionImage img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
+/* Style adjustments for the missionContent */
+.missionContent {
+  max-width: 50%; /* Limits the text block size to half of the parent container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the content vertically */
+  align-items: center; /* Centers the content horizontally for narrower screens or if desired */
+  text-align: center; /* Ensures text alignment is consistent, adjust as needed */
+  padding: 20px; /* Adds padding around the text for spacing */
+}
+
+.missionContent h2 {
+  font-size: 2.5rem; /* Makes the h2 larger. Adjust size as needed */
+  margin-bottom: 40px; /* Adds space below the h2 */
+  color: white;
+  justify-content: center;
+}
+
+.missionContent h3 {
+  font-size: 1.8rem;
+  justify-content: center;
+  color: gold;
+
+}
+
+.missionContent p {
+  font-size: 1.5rem; /* Adjust paragraph font size as needed */
+  max-width: 90%; /* Optionally limits the width of paragraphs for readability */
+  color: #fff;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ourMission {
+    flex-direction: column; /* Stacks the image and text vertically on smaller screens */
+  }
+  .missionImage, .missionContent {
+    max-width: 100%; /* Allows each to take full width of the container on small screens */
+  }
+  .missionContent h2 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .missionContent p {
+    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+  }
+}
+
+  

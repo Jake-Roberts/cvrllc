@@ -1,0 +1,48 @@
+.whyUsSection {
+    height: auto;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+  }
+  
+  .whyUsTitle {
+    margin-bottom: 300px;
+  }
+  
+  .statsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+  }
+  
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    height: 500px;
+    padding: 40px;
+    background-color: rgba(211, 208, 208, 0.438);
+    border-radius: 10px;
+
+  }
+
+  .statItem p {
+    font-size: 25px;
+    color: gold;
+  }
+
+  .statItem strong {
+    font-size: 25px;
+    color: black;
+  }
+  
+  .owensPreferredImage {
+    margin-top: 100px;
+  }
+  
+  

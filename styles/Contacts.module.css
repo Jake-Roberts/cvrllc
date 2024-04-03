@@ -1,0 +1,59 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will center the content vertically */
+    background-color: rgba(0, 0, 0, 0.705);
+    min-height: auto; /* This will ensure that the section takes at least the height of the viewport */
+    width: 100%;
+    padding:  50px 0; /* Add some padding at the top and bottom */
+  }
+  
+  .contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    width: 90%; /* Max width of the content */
+    font-size: 40px;
+    color: white;
+    gap: 20px; /* Adjust the gap between items */
+  }
+  
+  .contactContent h1 {
+    font-size: 80px;
+    margin-bottom: 50px; /* Reset the margin */
+  }
+  
+  .info {
+    display: flex;
+    padding-left: 150px;
+    flex-direction: row; /* Change to column if you want each info item on a new line */
+    align-items: center; /* Center these items if .info is a column */
+    gap: 100px; /* Adjust the gap between info items */
+    margin-top: 100px;
+  }
+
+  
+  
+  .address  {
+    white-space: nowrap;
+    gap: 20px;
+  }
+  
+  .specialization {
+    font-size: 40px;
+  }
+
+  .estimateBtn {
+    margin-top: 150px;
+    padding: 20px 30px;
+    font-weight: bold;
+    background-color: gold;
+    color: black;
+  }
+  
+  /* If you have a footer or other content, consider reducing the min-height of .contactContainer or adjust padding */
+  
+
+
+
+  

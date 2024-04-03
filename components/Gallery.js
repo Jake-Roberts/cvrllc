@@ -1,5 +1,6 @@
+
 'use client'
-import React, {useRef, useEffect} from "react";
+import React, {useRef, useEffect, useCallback} from "react";
 import  useEmblaCarousel  from 'embla-carousel-react';
 import styles from '../styles/Gallery.module.css';
 
@@ -9,27 +10,42 @@ const Gallery = ({ images }) => {
   const prevButtonRef = useRef(null);
   const nextButtonRef = useRef(null);
 
-  const scrollPrev = () => emblaApi && emblaApi.scrollPrev
-  const scrollNext = () => emblaApi && emblaApi.scrollNext
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollPrev();
+    }
+  }, [emblaApi]);
+  
+  const scrollNext = useCallback(() => {
+    if (emblaApi) {
+      emblaApi.scrollNext();
+    }
+  }, [emblaApi]);
+
 
   // After the embla instance is initialized, bind the button 
   useEffect(() => {
+    // Directly use scrollPrev and scrollNext since they're now stable references
     if (emblaApi) {
-      prevButtonRef.current.addEventListener('click', scrollPrev);
-      nextButtonRef.current.addEventListener('click', scrollNext);
+      const prevBtn = prevButtonRef.current;
+      const nextBtn = nextButtonRef.current;
+      
+      if (prevBtn) prevBtn.addEventListener('click', scrollPrev);
+      if (nextBtn) nextBtn.addEventListener('click', scrollNext);
+  
+      // Return cleanup function
+      return () => {
+        if (prevBtn) prevBtn.removeEventListener('click', scrollPrev);
+        if (nextBtn) nextBtn.removeEventListener('click', scrollNext);
+      };
     }
-    return () => {
-      if (emblaApi) {
-        prevButtonRef.current.removeEventListener('click', scrollPrev);
-        nextButtonRef.current.removeEventListener('click', scrollNext);
-      }
-    };
-  }, [emblaApi]);
+  }, [emblaApi, scrollPrev, scrollNext]); // Add scrollPrev and scrollNext to the dependency array
+  
 
     return (
       <>
         <div className={styles.container}>
-          <p className={styles.ourWork}>Our Work</p>
+          <h1 className={styles.ourWork}>Our Work</h1>
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
               {images.map((images, index) => (
@@ -38,9 +54,12 @@ const Gallery = ({ images }) => {
                 </div>
               ))}
             </div>
-            <button ref={prevButtonRef} className={`${styles.customArrow} ${styles.prevArrow}`}>Prev</button>
-            <button ref={nextButtonRef} className={`${styles.customArrow} ${styles.nextArrow}`}>Next</button>
+            <div className={styles.buttonsContainer}>
+              <button ref={prevButtonRef} className={`${styles.customArrow} ${styles.prevArrow}`}>&#10094;</button>
+              <button ref={nextButtonRef} className={`${styles.customArrow} ${styles.nextArrow}`}>&#10095;</button>
+            </div>
           </div>
+          
           <button className={styles.seeMore} >SeeMore</button>
         </div>
         

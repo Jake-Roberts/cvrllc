@@ -1,0 +1,99 @@
+/* TheTeam.module.css */
+.teamSection {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-color: rgb(49, 48, 48);
+    
+  }
+  
+  .teamTitle {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: white; /* Adjust color as needed */
+  }
+
+  .teamGrid {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates more columns for flexibility */
+    grid-template-rows: auto auto auto; /* Allows rows to size according to content */
+    gap: 40px;
+    width: 100%;
+    max-width: 2000px;
+    position: relative;
+  }
+
+  .teamMember:nth-child(1) { grid-area: first; }
+  .teamMember:nth-child(2) { grid-area: second; }
+  .teamMember:nth-child(3) { grid-area: third; }
+  .teamMember:nth-child(4) { grid-area: fourth; }
+
+/* Defining the grid template areas */
+.teamGrid {
+  grid-template-areas:
+    "first . . ."
+    ". . . second"
+    "third . . ."
+    ". . . fourth"
+}
+  
+  
+  .teamMember {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    color: white;
+    max-width: 800px;
+
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column; /* Stacks h2 and p vertically */
+    text-align: center;
+    padding: 0 15px ;
+  }
+
+  .textContainer h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: underline;
+    width: fit-content;
+  }
+
+  .textContainer p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: gold;
+  }
+  
+  .memberImage {
+    border-radius: 50%; /* Adjust as needed */
+    max-width: 250px; /* Adjust based on your design */
+    object-fit: cover;
+  }
+   
+  @media (max-width: 768px) {
+    .teamGrid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "fourth";
+    }
+  }
+  
+  

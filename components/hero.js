@@ -4,9 +4,12 @@ import Image from "next/image";
 import styles from "../styles/Hero.module.css"
 
 
+
+
+
 const Hero = () => {
     const [opacity, setOpacity] = useState(1);
-
+    
     useEffect(() => {
         const heroElement = document.querySelector('.' + styles.hero); // get the hero DOM element 
 
@@ -31,10 +34,20 @@ const Hero = () => {
     }, []);
     return ( 
     <div className={styles.hero} style = {{ opacity}}>
-        <div className={styles.heroContent}>
+        <div className={styles.heroContent }>
             <h1 className= {styles.heroH1}>Reaching New Heights</h1>
             <p className={styles.heroP}>Quality Roofing Services you can trust.</p>
-            <button className= {styles.heroButton}>Free estimate</button>
+            <div className={styles.ctaForm}>
+                <form id={styles.form}>
+                    <input type="text" placeholder= "First Name" required />
+                    <input type="text" placeholder= "Last Name" required />
+                    <input type="tel" placeholder= "Phone" required />
+                    <input type="email" placeholder= "Email" required />
+                    <input type="text" placeholder= "address" required />
+                    <input type="submit" onSubmit={}>Get free Estimate</input>
+                </form>
+                
+            </div>
         </div>
     </div>
   );

@@ -3,13 +3,13 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 50vh; /* Adjusted to 50% of the viewport height */
+  height: 100vh; /* Adjusted to 50% of the viewport height */
   text-align: center; /* Center the text content */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the background image */
   position: relative; /* For positioning elements inside absolutely if needed */
   color: #fff; /* Text color */
-  padding: 20px; /* Ensures content does not touch the edges */
+  padding: 100px; /* Ensures content does not touch the edges */
 }
 
   .heroContent {
@@ -18,12 +18,12 @@
     align-items: center;
     justify-content: center;
     text-align: center; /* Center the text inside the hero content */
-    padding: 100px;
+    padding: 150px;
     background-size: cover;
     background-position: center;
     background-color: rgba(17, 17, 17, 0.7);
     border-radius: 10px;
-    margin: auto;
+    /* margin: auto; */
     /* Add padding or margins as necessary */
   }
 
@@ -32,9 +32,9 @@
   .heroContent button {
     background-color: gold; /* Sets the button background to gold */
     font-weight: bold;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-align: center;
     color: #000; /* Sets the button text color to contrast, e.g., black */
     border: none; /* Removes any default border */
     padding: 15px 30px; /* Adjust padding as needed */
@@ -59,34 +59,22 @@
     background-color: darkgoldenrod; /* Darker gold color on hover for better interaction feedback */
   }
 
-  .ctaForm form {
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    margin-bottom: 20px; /* Spacing between form and hero content */
-    background: rgba(17, 17, 17, 0.7); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
+.ctaForm form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-bottom: 20px; /* Spacing between form and hero content */
+  background: transparent; /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 5px;
+}
 
 .ctaForm input[type="text"],
 .ctaForm input[type="tel"],
 .ctaForm input[type="email"] {
-    margin-bottom: 10px; /* Spacing between inputs */
-    padding: 10px;
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 5px;
+  margin-bottom: 20px; /* Spacing between inputs */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px;
 }
 
-.ctaForm button {
-    padding: 10px;
-    background-color: #007bff; /* Bootstrap primary blue */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}

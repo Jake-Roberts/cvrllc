@@ -1,0 +1,70 @@
+.reviewsSection {
+    height: auto ;
+    display: flex;
+    align-items: flex-start; /* Aligns items to the start of the container */
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.705);
+  }
+
+  .leftContent, .reviewsEmbed {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviewsSection h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    font-weight: bold;
+  }
+  
+  .reviewsHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px; /* Adjust based on your preference */
+  }
+
+  .reviewsContent {
+    margin-top: 400px;
+  }
+  
+  .reviewsRatings {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the stars and button */
+    width: 100%; /* Takes full width to ensure it's below the header */
+    margin-top: 20px; /* Space between header and rating section */
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 150px; /* Adjust as needed */
+    margin-bottom: 100px;
+  }
+  
+  .reviewButton {
+    background-color: gold;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 60%;
+    margin-bottom: 100px;
+  }
+  
+  .reviewsEmbed {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 50%; /* Adjust as needed */
+    height: 300px; /* Placeholder height, adjust as needed */
+    border: 1px solid #ccc; /* Placeholder styling */
+    overflow: auto; /* Allows scrolling if content overflows */
+  }
+  
+  
