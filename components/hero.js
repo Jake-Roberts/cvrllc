@@ -31,6 +31,7 @@ const Hero = () => {
         
         const form = event.target;
         const formData = {
+        
             name: form.elements.name.value, // Assuming your form has an input with name="name"
             email: form.elements.email.value, // Assuming an input with name="email"
             phone: form.elements.phone.value, // Assuming an input with name="email"

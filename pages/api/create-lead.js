@@ -9,7 +9,7 @@ export default async function handler(req, res) {
         };
   
         // Make an API request to JobNimbus
-        const jobNimbusResponse = await fetch('https://app.jobnimbus.com/api1/contacts/<jnid>', {
+        const jobNimbusResponse = await fetch('https://app.jobnimbus.com/api1/contacts/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
