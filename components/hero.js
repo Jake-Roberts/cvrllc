@@ -5,6 +5,7 @@ import styles from "../styles/Hero.module.css"
 import handler from "../pages/api/create-lead";
 
 const Hero = () => {
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const handleFormSubmit = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
 
@@ -31,7 +32,7 @@ const Hero = () => {
 
             // Handle success
             console.log('Lead created successfully');
-            alert('Form submitted successfully');
+            setIsFormSubmitted(true);
         } catch (error) {
             console.error('Error in form submission:', error);
             alert('There was an error submitting the form');
@@ -61,7 +62,9 @@ const Hero = () => {
             <div className={styles.heroContent}>
                 <h1 className={styles.heroH1}>Reaching New Heights</h1>
                 <p className={styles.heroP}>Quality Roofing Services you can trust.</p>
-                <div className={styles.ctaForm}>
+                {!isFormSubmitted ? (
+
+                    <div className={styles.ctaForm}>
                     <form className={styles.form} onSubmit={handleFormSubmit}>
                         <input type="text" name="first_name" placeholder="First Name"  required/>
                         <input type="text" name="last_name" placeholder="Last Name" required/>
@@ -72,6 +75,11 @@ const Hero = () => {
                         <button type="submit" className={styles.heroButton}>Get your Free estimate</button>
                     </form>
                 </div>
+                ): (
+                    <div className={styles.sucessMessage}>
+                        <p>Thank you! We will contact you soon.</p>
+                    </div>
+                )}
             </div>
         </div>
     );

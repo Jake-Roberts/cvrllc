@@ -15,12 +15,13 @@ import GoogleReviewsSection from "../../components/Review";
 import Contact from "../../components/Contact";
 
 const imagesList = [
-  {url: '../../DJI_0205.JPG', alt: 'First Image'},
-  {url: '../../DJI_0363.JPG', alt: 'Second Image'},
-  {url: '../../DJI_0398.JPG', alt: 'Third Image'},
-  {url: '../../DJI_0585.JPG', alt: 'Fourth Image'},
-  {url: '../../DJI_0548.JPG', alt: 'Fifth Image'},
-  {url: '../.', alt: 'six Image'},
+  {url: '../../DJI_0205.JPG', alt: 'First Image', type: 'image'},
+  {url: '../../DJI_0363.JPG', alt: 'Second Image', type: 'image'},
+  {url: '../../DJI_0398.JPG', alt: 'Third Image', type: 'image'},
+  {url: '../../DJI_0585.JPG', alt: 'Fourth Image', type: 'image'},
+  {url: '../../DJI_0548.JPG', alt: 'Fifth Image', type: 'image'},
+  {url: '../../Chaves1.mp4', alt: 'Video', type: 'video'},
+  {url: '../../Chaves3.mp4', alt: 'Video3', type: 'video'},
 ];
 
 
@@ -29,29 +30,29 @@ export default function Home() {
     <div>
       <header className= {styles.navBar}><NavBar /></header>
       <main>
-        <div className={styles.hero}>
+        <div id="hero" className={styles.hero}>
           <Hero />
         </div>
-        <section className={styles.ourMission}>
+        <section id="ourMission" className={styles.ourMission}>
           <OurMission />
         </section> 
-        <section className={styles.services}>
+        <section id="services" className={styles.services}>
           <Services/>
         </section>
-        <div className={styles.gallery}>
+        <div id="ourWork" className={styles.gallery}>
           <Gallery images= {imagesList}/>
         </div> 
-        <section className={styles.theTeam}>
+        <section id="theTeam" className={styles.theTeam}>
           <TheTeam />
         </section>
-        <section className={styles.whyUs}>
+        <section id="whyUS" className={styles.whyUs}>
           <WhyUs />
         </section>
-        <section className={styles.googleReviewsSection}>
+        <section id="googleReviews" className={styles.googleReviewsSection}>
           <GoogleReviewsSection />
         </section>
       </main>
-      <footer>
+      <footer id="contact">
         <Contact/>
       </footer>
     </div>

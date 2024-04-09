@@ -80,3 +80,11 @@
   border-radius: 5px;
 }
 
+.successMessage {
+  background-color: #4cAf50;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-align: center;
+}

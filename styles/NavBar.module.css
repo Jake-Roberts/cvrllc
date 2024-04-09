@@ -1,8 +1,11 @@
 /* NavBar.module.css */
 .navbar {
+    position: sticky;
+    width: auto;
     height: 80px;
     padding: 0 20px 10px 20px;
     display: flex; 
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     /* background-color: rgba(2, 2, 2, 0.5); Adjust color to match Kiewit's */
@@ -51,7 +54,7 @@
     text-align: center;
     list-style: none;
     margin: 0;
-    padding: 60px 0 ;
+    padding: 120px 100px ;
   }
   
   .nav li {
