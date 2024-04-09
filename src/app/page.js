@@ -20,6 +20,7 @@ const imagesList = [
   {url: '../../DJI_0398.JPG', alt: 'Third Image'},
   {url: '../../DJI_0585.JPG', alt: 'Fourth Image'},
   {url: '../../DJI_0548.JPG', alt: 'Fifth Image'},
+  {url: '../.', alt: 'six Image'},
 ];
 
 
