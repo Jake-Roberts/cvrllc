@@ -21,12 +21,12 @@ const submitForm = async (formData) => {
         alert('There was an error submitting the form');
       }
   }
-  
+
 
 
 
 const Hero = () => {
-    const handleFormSubmit = async (event) => {
+const handleFormSubmit = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
         
         const form = event.target;
