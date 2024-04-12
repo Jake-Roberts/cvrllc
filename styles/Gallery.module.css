@@ -73,7 +73,7 @@
 
 
 
-.seeMore {
+.seeMore, .seeMore a {
     background-color: gold; /* Sets the button background to gold */
     font-weight: bold;
     font-size: 1.2rem;
@@ -87,8 +87,9 @@
     margin-bottom: 100px;
 }
 
-.seeMore:hover {
-  background-color: rgb(160, 157, 157);
+.seeMore:hover  {
+  background-color: darkgoldenrod;
+  color: darkgoldenrod;
 }
 
 /* Gallery.module.css media queries */

@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Contacts.module.css'; // Adjust path as needed
 import InstagramLogo from '../public/InstagramLogo.svg'
+import faceBookIcon from '../public/facebookIcon.svg'
+import youtubeIcon from '../public/youtubeIcon2.svg'
 
 
 const Contact = () => {
@@ -23,7 +25,13 @@ const Contact = () => {
                     Email: cvrroofing32@gmail.com <br/>
                     <p>Our Socials: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className={styles.socials}>
                         <Image src={InstagramLogo} alt="Instagram" width={100} height={100} />
-                    </a></p>
+                    </a><a href="https://www.facebook.com/cedarvalleyroofingllc" target="_blank" rel="noopener noreferrer" className={styles.socials}>
+                        <Image src={faceBookIcon} alt="Instagram" width={100} height={100} />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC0cT-9ueYeQYfRkSApQedJw" target="_blank" rel="noopener noreferrer" className={styles.socials}>
+                        <Image src={youtubeIcon} alt="Instagram" width={100} height={100} />
+                    </a>
+                    </p>
                     
                 </div>
                 

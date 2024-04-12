@@ -14,13 +14,14 @@
     flex-direction: column;
     align-items: center; /* Center items vertically */
     border-radius: 10px;
-    height: auto;
+    height: 80vh;
     justify-content: center;
     background-position: center;
   }
   
   .header {
     font-size: 35px;
+    margin: 2rem;
     color: white; /* Main header color */
     margin-bottom: 20px; /* Spacing between header and subheader */
   }
