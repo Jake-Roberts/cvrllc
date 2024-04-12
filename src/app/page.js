@@ -13,6 +13,7 @@ import TheTeam from "../../components/Team";
 import WhyUs from "../../components/WhyUs";
 import GoogleReviewsSection from "../../components/Review";
 import Contact from "../../components/Contact";
+import Head from 'next/head';
 
 const imagesList = [
   {url: '../../DJI_0205.JPG', alt: 'First Image', type: 'image'},
@@ -27,6 +28,11 @@ const imagesList = [
 
 export default function Home() {
   return (
+  <>
+    {/* <Head>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    </Head> */}
+
     <div>
       <header className= {styles.navBar}><NavBar /></header>
       <main>
@@ -56,5 +62,6 @@ export default function Home() {
         <Contact/>
       </footer>
     </div>
+  </>
   )
 }

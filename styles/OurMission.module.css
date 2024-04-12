@@ -1,13 +1,13 @@
 /* Adjust the base layout for the OurMission section */
 .ourMission {
   display: flex;
-  height: 100vh;
+  height: auto;
   flex-direction: row; /* Allows items to wrap on smaller screens */
   align-items: center; /* Vertically aligns children if there's extra space */
   justify-content: center; /* Horizontally centers children in the container */
   gap: 20px; /* Optional: Adds space between the image and text */
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.705);
+  background-color: rgb(70, 68, 68);
 }
 
 /* Style adjustments for the missionImage */

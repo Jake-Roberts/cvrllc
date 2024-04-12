@@ -40,7 +40,7 @@ const Contact = () => {
             
         </div>      
             <div className={styles.estimate}>
-                <button className={styles.estimateBtn}>Get Your Free Estimate</button>
+                <button className={styles.estimateBtn}><a href="#hero">Get Your Free Estimate</a></button>
             </div>
         </div>
     </section>

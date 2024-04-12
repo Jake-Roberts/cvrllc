@@ -22,7 +22,17 @@ const GoogleReviewsSection = () => {
         </div>  
         <div className={styles.reviewsEmbed}>
                 {/* Placeholder for embedded reviews */}
-                <p>Embedded Google Reviews Here</p>
+                {/* <div className={"elfsight-app-e1bccc40-dca2-47b3-92f6-c1865c66fae5"} data-elfsight-app-lazy></div> */}
+                <iframe 
+                  src='https://e1bccc40dca247b392f6c1865c66fae5.elf.site' 
+                  width="100%" 
+                  height="500" 
+                  style={{ border: 'none', overflow: 'hidden' }}
+                  scrolling="no" 
+                  frameborder="0" 
+                  allowTransparency="true" 
+                  allow="encrypted-media">
+                </iframe>
         </div>
       
     </section>

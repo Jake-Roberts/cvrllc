@@ -43,7 +43,7 @@
     font-size: 40px;
   }
 
-  .estimateBtn {
+  .estimateBtn, .estimateBtn a {
     margin-top: 150px;
     padding: 20px 30px;
     font-weight: bold;
