@@ -37,11 +37,15 @@ const NavBar = () => {
       {/* Nav Links */}
       <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
         <ul>
-          <li><Link href="/work">Our Work</Link></li>
-          <li><Link href="/team">The Team</Link></li>
-          <li><Link href="/services">Services</Link></li>
-          <li><Link href="/projects">Projects</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#ourMission">Our Mission</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#ourWork">Our Work</a></li>
+          <li><a href="#theTeam">The Team</a></li>
+          <li><a href="#whyUS">Why us</a></li>
+          <li><a href="#googleReviews">Reviews</a></li>
+          <li><a href="#contact">Lets Talk</a></li>
+          
         </ul>
       </nav>
       {/* Hamburger Icon */}

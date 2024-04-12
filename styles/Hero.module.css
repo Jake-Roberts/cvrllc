@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 100vh; /* Adjusted to 50% of the viewport height */
+  height: auto; /* Adjusted to 50% of the viewport height */
   text-align: center; /* Center the text content */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the background image */
@@ -71,10 +71,20 @@
 
 .ctaForm input[type="text"],
 .ctaForm input[type="tel"],
-.ctaForm input[type="email"] {
+.ctaForm input[type="email"],
+.ctaForm input[type=""]{
+
   margin-bottom: 20px; /* Spacing between inputs */
   padding: 10px;
   border: 1px solid #ccc; /* Light grey border */
   border-radius: 5px;
 }
 
+.successMessage {
+  background-color: #4cAf50;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-align: center;
+}

@@ -48,9 +48,15 @@ const Gallery = ({ images }) => {
           <h1 className={styles.ourWork}>Our Work</h1>
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
-              {images.map((images, index) => (
+              {images.map((item, index) => (
                 <div className={styles.embla__slide} key={index}>
-                  <img src={images.url} alt={images.alt} className={styles.embla__image}/>
+                {item.type === 'image' ? (
+                  <img src={item.url} alt={images.alt} className={styles.embla__image}/>
+                ) : (
+                  <video controls className={styles.embla__image}>
+                    <source src={item.url} type="video/mp4"/>
+                  </video>
+                )}
                 </div>
               ))}
             </div>
@@ -60,7 +66,7 @@ const Gallery = ({ images }) => {
             </div>
           </div>
           
-          <button className={styles.seeMore} >SeeMore</button>
+          <button className={styles.seeMore} ><a href="https://www.facebook.com/cedarvalleyroofingllc">See More!</a></button>
         </div>
         
       </>
