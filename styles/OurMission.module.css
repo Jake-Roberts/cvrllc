@@ -1,4 +1,15 @@
 /* Adjust the base layout for the OurMission section */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .ourMission {
   display: flex;
   height: auto;
@@ -17,7 +28,7 @@
   
 }
 
-.missionImage img {
+.missionImage video {
   width: 100%; /* Ensures the image fills its container */
   height: auto; /* Maintains the image's aspect ratio */
 }
@@ -31,6 +42,7 @@
   align-items: center; /* Centers the content horizontally for narrower screens or if desired */
   text-align: center; /* Ensures text alignment is consistent, adjust as needed */
   padding: 20px; /* Adds padding around the text for spacing */
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .missionContent h2 {

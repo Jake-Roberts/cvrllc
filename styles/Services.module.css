@@ -1,4 +1,5 @@
 /* Services.module.css */
+
 .services {
     height: auto;
     color: white; /* Default text color */
@@ -48,7 +49,7 @@
     margin-top: 60px;
   }
 
-  .servicesButton {
+  .servicesButton, .servicesButton a{
     background-color: gold; /* Sets the button background to gold */
     font-weight: bold;
     font-size: 1.2rem;

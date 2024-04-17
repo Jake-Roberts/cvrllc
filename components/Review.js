@@ -13,6 +13,17 @@ const GoogleReviewsSection = () => {
                 <h2>Google Reviews</h2>
             </div>
             <div className={styles.reviewsContent}>
+              <div className={styles.reviewsEmbed}>
+                  <iframe 
+                    src='https://e1bccc40dca247b392f6c1865c66fae5.elf.site' 
+                    width="100%" 
+                    height="500" 
+                    style={{ border: 'none', overflow: 'hidden' }} 
+                    scrolling='no' 
+                                    
+                    allow="encrypted-media">
+                  </iframe>
+              </div> 
                 <div className={styles.reviewsRatings}>
                 {/* Star ratings and review button */}
                 <div className={styles.stars}>★★★★★</div>
@@ -20,20 +31,7 @@ const GoogleReviewsSection = () => {
                 </div>
             </div>
         </div>  
-        <div className={styles.reviewsEmbed}>
-                {/* Placeholder for embedded reviews */}
-                {/* <div className={"elfsight-app-e1bccc40-dca2-47b3-92f6-c1865c66fae5"} data-elfsight-app-lazy></div> */}
-                <iframe 
-                  src='https://e1bccc40dca247b392f6c1865c66fae5.elf.site' 
-                  width="100%" 
-                  height="500" 
-                  style={{ border: 'none', overflow: 'hidden' }}
-                  scrolling="no" 
-                  frameborder="0" 
-                  allowTransparency="true" 
-                  allow="encrypted-media">
-                </iframe>
-        </div>
+        
       
     </section>
   );

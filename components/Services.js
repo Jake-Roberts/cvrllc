@@ -15,7 +15,7 @@ const Services = () => {
                     <article className={styles.article}>Write a paragraph that talks about your company here. You can talk about your company's background, history, mission, vision, or philosophy. Anything that will introduce your brand's persona to your clients. This will help build a connection between you and them.</article>
                 </div>
                 <div className={styles.servicesButtonContainer}>
-                    <button className={styles.servicesButton}>Contact Us!</button>
+                    <button className={styles.servicesButton}><a href="#contact">Contact Us!</a></button>
                 </div>
             </div>
         </section>

@@ -15,17 +15,17 @@ const WhyUs = () => {
         <div className={styles.statItem}>
           <Image src={YearsIcon} width={400} height={400} alt="Years in Business" className={styles.statIcon} />
           <p>Years in Business:</p>
-          <strong>10</strong>
+          <strong>5</strong>
         </div>
         <div className={styles.statItem}>
           <Image src={PeopleIcon} width={400} height={400} alt="People Served" className={styles.statIcon} />
           <p>People Served:</p>
-          <strong>500+</strong>
+          <strong>100+</strong>
         </div>
         <div className={styles.statItem}>
           <Image src={RoofsIcon} width={400} height={400} alt="Roofs Completed" className={styles.statIcon} />
           <p>Roofs Completed:</p>
-          <strong>200</strong>
+          <strong>100+</strong>
         </div>
       </div>
       <div className={styles.owensPreferredImage}>

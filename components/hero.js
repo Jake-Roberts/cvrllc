@@ -57,9 +57,15 @@ const Hero = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
+
     return (
         <div className={styles.hero} style={{ opacity }}>
-            <div className={styles.heroContent}>
+            <div className={`${styles.heroContent} ${animate ? styles.slideUpAnimation : ''}`}>
                 <h1 className={styles.heroH1}>Reaching New Heights</h1>
                 <p className={styles.heroP}>Quality Roofing Services you can trust.</p>
                 {!isFormSubmitted ? (

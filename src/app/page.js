@@ -21,7 +21,8 @@ const imagesList = [
   {url: '../../DJI_0398.JPG', alt: 'Third Image', type: 'image'},
   {url: '../../DJI_0585.JPG', alt: 'Fourth Image', type: 'image'},
   {url: '../../DJI_0548.JPG', alt: 'Fifth Image', type: 'image'},
-  {url: '../../Chaves1.mp4', alt: 'Video', type: 'video'},
+  {url: '../../roofing2.JPG', alt: 'sixth Image', type: 'image'},
+  {url: '../../DJI_0978.mp4', alt: 'Video', type: 'video'},
   {url: '../../Chaves3.mp4', alt: 'Video3', type: 'video'},
 ];
 
@@ -29,10 +30,6 @@ const imagesList = [
 export default function Home() {
   return (
   <>
-    {/* <Head>
-      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    </Head> */}
-
     <div>
       <header className= {styles.navBar}><NavBar /></header>
       <main>

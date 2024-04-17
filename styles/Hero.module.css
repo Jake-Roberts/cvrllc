@@ -88,3 +88,18 @@
   border-radius: 5px;
   text-align: center;
 }
+
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.slideUpAnimation {
+  animation: slideUp 1.0s ease-out forwards;
+}
