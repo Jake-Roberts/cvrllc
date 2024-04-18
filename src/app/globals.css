@@ -8,6 +8,8 @@ html, body {
   background-attachment: fixed; /* Make background fixed during scroll */
   background-position: center; /* Center the background image */
   height: 100vh;/* Ensure full height */
+  width: 100%;
+  overflow-x: hidden;
   
 }
 
