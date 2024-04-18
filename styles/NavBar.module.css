@@ -1,6 +1,6 @@
 /* NavBar.module.css */
 .navbar {
-    position: sticky;
+    position: fixed;
     width: auto;
     height: 80px;
     padding: 0 20px 10px 20px;
@@ -11,7 +11,7 @@
     /* background-color: rgba(2, 2, 2, 0.5); Adjust color to match Kiewit's */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background: rgba(214, 208, 208, 0.5);
-    position: sticky;
+    width: 100%;
     top: 0;
     z-index: 1000;
   }
@@ -118,30 +118,49 @@
   
   
 
-  @media (max-width: 768px) {
-    .nav {
-      width: 200px; /* Smaller width for smaller screens */
-      top: 70px; /* Adjust if your NavBar height changes on smaller screens */
-    }
-  
-    .hamburger {
-      /* Ensure the hamburger icon is visible and properly positioned on smaller screens */
-      display: flex;
-    }
-  
-    /* Additional responsive adjustments as needed */
+
+@media (max-width: 1200px) {
+  .nav {
+    width: 100%; /* Full width for very small screens */
+    top: 0; /* Start from the top */
+    height: 100vh; /* Optional: Make the menu full-height */
+    transform: translateY(-100%); /* Hide above the viewport initially */
   }
   
-  @media (max-width: 480px) {
-    .nav {
-      width: 100%; /* Full width for very small screens */
-      top: 0; /* Start from the top */
-      height: 100vh; /* Optional: Make the menu full-height */
-      transform: translateY(-100%); /* Hide above the viewport initially */
-    }
-  
-    .nav.open {
-      transform: translateY(0); /* Slide down */
-    }
+  .nav.open {
+    transform: translateY(0); /* Slide down */
+  }
+  .hamburger{
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 200px; /* Smaller width for smaller screens */
+    top: 70px; /* Adjust if your NavBar height changes on smaller screens */
+  }
+
+  .hamburger {
+    /* Ensure the hamburger icon is visible and properly positioned on smaller screens */
+    display: flex;
+  }
+
+  /* Additional responsive adjustments as needed */
+}
+
+@media (max-width: 480px) {
+  .nav {
+    width: 100%; /* Full width for very small screens */
+    top: 0; /* Start from the top */
+    height: 100vh; /* Optional: Make the menu full-height */
+    transform: translateY(-100%); /* Hide above the viewport initially */
   }
   
+  .nav.open {
+    transform: translateY(0); /* Slide down */
+  }
+  .hamburger{
+    display: flex;
+  }
+}
