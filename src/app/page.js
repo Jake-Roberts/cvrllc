@@ -1,6 +1,7 @@
 
 'use client'
 import Image from "next/image";
+import Head from "next/head";
 import NavBar from "../../components/NavBar";
 import styles from "./page.module.css";
 import dynamic from "next/dynamic";
@@ -13,7 +14,6 @@ import TheTeam from "../../components/Team";
 import WhyUs from "../../components/WhyUs";
 import GoogleReviewsSection from "../../components/Review";
 import Contact from "../../components/Contact";
-import Head from 'next/head';
 
 const imagesList = [
   {url: '../../DJI_0205.JPG', alt: 'First Image', type: 'image'},
@@ -27,9 +27,13 @@ const imagesList = [
 ];
 
 
-export default function Home() {
+export default function Home({}) {
   return (
   <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <title>Cedar Valley Roofing </title>
+    </Head>
     <div>
       <header className= {styles.navBar}><NavBar /></header>
       <main>
