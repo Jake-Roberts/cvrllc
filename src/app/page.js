@@ -27,7 +27,7 @@ const imagesList = [
 ];
 
 
-export default function Home({}) {
+export default function Home() {
   return (
   <>
     <Head>
