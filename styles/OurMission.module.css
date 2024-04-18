@@ -1,15 +1,4 @@
 /* Adjust the base layout for the OurMission section */
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .ourMission {
   display: flex;
   height: auto;

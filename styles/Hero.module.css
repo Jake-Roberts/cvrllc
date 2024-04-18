@@ -1,4 +1,19 @@
 /* Hero.module.css */
+@keyframes slideUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.slideUpAnimation {
+  animation: slideUp 1.0s ease-out forwards;
+}
+
 .hero {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -18,11 +33,13 @@
     align-items: center;
     justify-content: center;
     text-align: center; /* Center the text inside the hero content */
-    padding: 150px;
+    padding: 80px;
     background-size: cover;
     background-position: center;
     background-color: rgba(17, 17, 17, 0.7);
     border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
     /* margin: auto; */
     /* Add padding or margins as necessary */
   }
@@ -45,7 +62,8 @@
   .heroH1 {
     color: white;
     font-size: 35px;
-    height: auto;
+    height: auto; 
+    margin-bottom: 15px ;
 
   }
 
@@ -62,7 +80,7 @@
 .ctaForm form {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  width: auto;
   margin-bottom: 20px; /* Spacing between form and hero content */
   background: transparent; /* Semi-transparent background */
   padding: 20px;
@@ -89,17 +107,43 @@
   text-align: center;
 }
 
-@keyframes slideUp {
-  from {
-      transform: translateY(100%);
-      opacity: 0;
+
+@media (max-width: 768px) {
+  .heroH1 {
+    font-size: 24px; /* Even smaller font size for mobile */
   }
-  to {
-      transform: translateY(0);
-      opacity: 1;
+
+  .heroP {
+    font-size: 16px; /* Adjust text size for readability */
+  }
+
+  .heroContent button {
+    font-size: 14px; /* Smaller button font size for compact appearance */
+  }
+
+  .heroContent {
+    height: auto;
+    padding: 30px; /* Reduce padding to save space */
   }
 }
 
-.slideUpAnimation {
-  animation: slideUp 1.0s ease-out forwards;
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 10px; /* Minimize padding for very small screens */
+  }
+
+  .heroContent {
+    padding: 20px;
+  }
+
+  .ctaForm input[type="text"],
+  .ctaForm input[type="tel"],
+  .ctaForm input[type="email"] {
+    padding: 10px; /* Slightly smaller padding in inputs for small screens */
+  }
+
+  .heroContent button {
+    padding: 10px 20px; /* Smaller buttons */
+  }
 }
+
