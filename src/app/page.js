@@ -30,10 +30,6 @@ const imagesList = [
 export default function Home() {
   return (
   <>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <title>Cedar Valley Roofing </title>
-    </Head>
     <div>
       <header className= {styles.navBar}><NavBar /></header>
       <main>
