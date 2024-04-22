@@ -34,6 +34,7 @@
   .teamMember:nth-child(2) { grid-area: second; }
   .teamMember:nth-child(3) { grid-area: third; }
   .teamMember:nth-child(4) { grid-area: fourth; }
+  .teamMember:nth-child(5) { grid-area: fifth; }
 
 /* Defining the grid template areas */
 .teamGrid {
@@ -42,6 +43,7 @@
     ". . . second"
     "third . . ."
     ". . . fourth"
+    "fifth . . ."
 }
   
   
@@ -92,7 +94,8 @@
         "first"
         "second"
         "third"
-        "fourth";
+        "fourth"
+        "fifth";
       width: auto;
     }
   }

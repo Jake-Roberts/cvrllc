@@ -26,14 +26,14 @@
     min-width: 350px;
     height: 500px;
     padding: 40px;
-    background-color: rgba(211, 208, 208, 0.438);
+    background-color: rgba(255, 217, 0, 0.701);
     border-radius: 10px;
 
   }
 
   .statItem p {
     font-size: 25px;
-    color: gold;
+    color: rgb(255, 255, 255);
   }
 
   .statItem strong {

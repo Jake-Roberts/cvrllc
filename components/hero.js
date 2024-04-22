@@ -66,7 +66,7 @@ const Hero = () => {
     return (
         <div className={styles.hero} style={{ opacity }}>
             <div className={styles.heroContent}>
-                <h1 className={styles.heroH1}>Reaching New Heights</h1>
+                <h1 className={styles.heroH1}>Get a Free Roof Inspection Today!</h1>
                 <p className={styles.heroP}>Quality Roofing Services you can trust.</p>
                 {!isFormSubmitted ? (
 
