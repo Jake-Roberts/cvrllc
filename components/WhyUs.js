@@ -6,7 +6,6 @@ import styles from "../styles/WhyUs.module.css"; // Make sure the path is correc
 import YearsIcon from '../public/homeicon.svg'; // Adjust path
 import PeopleIcon from '../public/peopleicon2.svg'; // Adjust path
 import RoofsIcon from '../public/toolboxicon2.svg'; // Adjust path
-import OwensCorning from '../public/owenPreferredContractor.png'
 
 const WhyUs = () => {
   return (
@@ -30,7 +29,7 @@ const WhyUs = () => {
         </div>
       </div>
       <div className={styles.owensPreferredImage}>
-        <Image src="/../owenPreferredContractor.png" alt="owens preferred contractor" width={800} height={400}/>
+        <Image src="/owenPreferredContractor.png" alt="owens preferred contractor" width={800} height={400}/>
       </div>
     </section>
   );
