@@ -15,7 +15,7 @@ const WhyUs = () => {
         <div className={styles.statItem}>
           <Image src={YearsIcon} width={400} height={400} alt="Years in Business" className={styles.statIcon} />
           <p>Years in Business:</p>
-          <strong>5</strong>
+          <strong>3+</strong>
         </div>
         <div className={styles.statItem}>
           <Image src={PeopleIcon} width={400} height={400} alt="People Served" className={styles.statIcon} />
