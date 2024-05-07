@@ -20,10 +20,10 @@ const TheTeam = () => {
             <h2>Rony</h2>
             <p>Roofing Specialist.</p>
           </div>
-          <Image src="/Rony.jpg" alt="Second Team Member" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/Rony.JPG" alt="Second Team Member" className={styles.memberImage} width={200} height={200}/>
         </div>
         <div className={styles.teamMember}>
-        <Image src="/Jose.jpg" alt="Second Team Member" className={styles.memberImage} width={200} height={200}/>
+        <Image src="/Jose.JPG" alt="Third Team Member" className={styles.memberImage} width={200} height={200}/>
           <div className={styles.textContainer}>
             <h2>Jose</h2>
             <p>Roofing Specialist.</p>
@@ -36,11 +36,11 @@ const TheTeam = () => {
             <h2>Landon</h2>
             <p>Inspection Specialist.</p>
           </div>
-          <Image src="/Landon.jpg" alt="Second Team Member" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/Landon.jpg" alt="Fourth Team Member" className={styles.memberImage} width={200} height={200}/>
         </div>
         {/* Third Team Member */}
         <div className={styles.teamMember}>
-          <Image src="/Danielle.jpg" alt="Third Team Member" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/Danielle.jpg" alt="fifth Team Member" className={styles.memberImage} width={200} height={200}/>
           <div className={styles.textContainer}>
             <h2>Danielle</h2>
             <p>Office Manager.</p>
@@ -52,10 +52,10 @@ const TheTeam = () => {
             <h2>Jake</h2>
             <p>Social Media Manager.</p>
           </div>
-          <Image src="/Jake.jpg" alt="fourth Team Member" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/Jake.jpg" alt="Sixth Team Member" className={styles.memberImage} width={200} height={200}/>
         </div>
         <div className={styles.teamMember}>
-          <Image src="/david2.jpg" alt="fifth Team Member" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/david2.jpg" alt="Seventh Team Member" className={styles.memberImage} width={200} height={200}/>
           <div className={styles.textContainer}>
             <h2>David</h2>
             <p>Inspection Specialist.</p>
