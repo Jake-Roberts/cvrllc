@@ -17,12 +17,12 @@ import Contact from "../../components/Contact";
 
 const imagesList = [
   {url: '../../DJI_0205.JPG', alt: 'First Image', type: 'image'},
-  {url: '../../DJI_0363.JPG', alt: 'Second Image', type: 'image'},
+  {url: '../../DJI_0431.JPG', alt: 'Second Image', type: 'image'},
   {url: '../../DJI_0398.JPG', alt: 'Third Image', type: 'image'},
   {url: '../../DJI_0585.JPG', alt: 'Fourth Image', type: 'image'},
   {url: '../../DJI_0548.JPG', alt: 'Fifth Image', type: 'image'},
   {url: '../../roofing2.JPG', alt: 'sixth Image', type: 'image'},
-  {url: '../../DJI_0978.mp4', alt: 'Video', type: 'video'},
+  {url: '../../DJI_0465.JPG', alt: 'Seventh Image', type: 'image'},
   {url: '../../Chaves3.mp4', alt: 'Video3', type: 'video'},
 ];
 
