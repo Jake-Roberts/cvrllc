@@ -20,12 +20,12 @@ const WhyUs = () => {
         <div className={styles.statItem}>
           <Image src={PeopleIcon} width={400} height={400} alt="People Served" className={styles.statIcon} />
           <p>People Served:</p>
-          <strong>100+</strong>
+          <strong>110+</strong>
         </div>
         <div className={styles.statItem}>
           <Image src={RoofsIcon} width={400} height={400} alt="Roofs Completed" className={styles.statIcon} />
           <p>Roofs Completed:</p>
-          <strong>100+</strong>
+          <strong>110+</strong>
         </div>
       </div>
       <div className={styles.owensPreferredImage}>

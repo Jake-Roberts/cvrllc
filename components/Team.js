@@ -9,11 +9,26 @@ const TheTeam = () => {
       <div className={styles.teamGrid}>
         {/* First Team Member */}
         <div className={styles.teamMember}>
-          <img src="/Nelson.jpg" alt="First Team Member" className={styles.memberImage} width={200} height={200} />
+          <Image src="/Nelson.jpg" alt="First Team Member" className={styles.memberImage} width={200} height={200} />
           <div className={styles.textContainer}>
             <h2>Nelson</h2>
             <p>Founder/Roofing Specialist</p>
           </div>
+        </div>
+        <div className={styles.teamMember}>
+          <div className={styles.textContainer}>
+            <h2>Rony</h2>
+            <p>Roofing Specialist.</p>
+          </div>
+          <Image src="/Rony.jpg" alt="Second Team Member" className={styles.memberImage} width={200} height={200}/>
+        </div>
+        <div className={styles.teamMember}>
+        <Image src="/Jose.jpg" alt="Second Team Member" className={styles.memberImage} width={200} height={200}/>
+          <div className={styles.textContainer}>
+            <h2>Jose</h2>
+            <p>Roofing Specialist.</p>
+          </div>
+          
         </div>
         {/* Second Team Member */}
         <div className={styles.teamMember}>

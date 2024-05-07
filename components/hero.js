@@ -12,8 +12,10 @@ const Hero = () => {
         const formData = {
             display_name: event.target.elements.display_name.value,
             email: event.target.elements.email.value,
-            phone: event.target.elements.phone.value,
-            address: event.target.elements.address.value,
+            mobile_phone: event.target.elements.mobile_phone.value,
+            address_line1: event.target.elements.address_line1.value,
+            city: event.target.elements.city.value,
+            state_text: event.target.elements.state_text.value,
             record_type_name: "Retail",
             status_name: "Lead",
             company: event.target.elements.company ? event.target.elements.company.value : "",
@@ -75,9 +77,11 @@ const Hero = () => {
                         <input type="text" name="first_name" placeholder="First Name"  required/>
                         <input type="text" name="last_name" placeholder="Last Name" required/>
                         <input type="text" name="display_name" placeholder="Full Name" required />
-                        <input type="tel" name="phone" placeholder="Phone" required />
-                        <input type="email" name="email" placeholder="Email" required />
-                        <input type="text" name="address" placeholder="Address" required />
+                        <input type="text" name="mobile_phone" placeholder="Phone" required />
+                        <input type="text" name="email" placeholder="Email" required />
+                        <input type="text" name="address_line1" placeholder="Address" required />
+                        <input type="text" name="city" placeholder="City" required/>
+                        <input type="text" name="state_text" placeholder="State" required/>
                         <button type="submit" className={styles.heroButton}>Get your Free estimate</button>
                     </form>
                 </div>

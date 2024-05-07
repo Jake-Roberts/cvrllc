@@ -5,7 +5,7 @@ import Head from "next/head";
 import NavBar from "../../components/NavBar";
 import styles from "./page.module.css";
 import dynamic from "next/dynamic";
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 import Hero from "../../components/hero";
 import Gallery from "../../components/Gallery";
 import OurMission from "../../components/OurMission";

@@ -2,6 +2,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../styles/NavBar.module.css';
 import Image from 'next/image';
 
