@@ -9,7 +9,7 @@ const GoogleReviewsSection = () => {
     <section className={styles.reviewsSection}>
         <div className={styles.leftContent}>
             <div className={styles.reviewsHeader}>
-                <Image src={googleLogo} alt="Google Logo" width={400} height={400} />
+                <Image className={googleLogo} src={googleLogo} alt="Google Logo" width={200} height={200} />
                 <h2>Google Reviews</h2>
             </div>
             <div className={styles.reviewsContent}>

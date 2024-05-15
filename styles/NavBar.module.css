@@ -1,7 +1,7 @@
 /* NavBar.module.css */
 .navbar {
   position: fixed;
-  width: auto;
+  width: 100%;
   height: 80px;
   padding: 0 20px 10px 20px;
   display: flex; 

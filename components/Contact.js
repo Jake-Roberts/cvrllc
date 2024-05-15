@@ -24,12 +24,12 @@ const Contact = () => {
                     Phone: 435-559-7134 <br/>
                     Email: cvrroofing32@gmail.com <br/>
                     <p>Our Socials: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className={styles.socials}>
-                        <Image src={InstagramLogo} alt="Instagram" width={100} height={100} />
+                        <Image src={InstagramLogo} alt="Instagram" width={50} height={50} />
                     </a><a href="https://www.facebook.com/cedarvalleyroofingllc" target="_blank" rel="noopener noreferrer" className={styles.socials}>
-                        <Image src={faceBookIcon} alt="Instagram" width={100} height={100} />
+                        <Image src={faceBookIcon} alt="Instagram" width={50} height={50} />
                     </a>
                     <a href="https://www.youtube.com/channel/UC0cT-9ueYeQYfRkSApQedJw" target="_blank" rel="noopener noreferrer" className={styles.socials}>
-                        <Image src={youtubeIcon} alt="Instagram" width={100} height={100} />
+                        <Image src={youtubeIcon} alt="Instagram" width={50} height={50} />
                     </a>
                     </p>
                     

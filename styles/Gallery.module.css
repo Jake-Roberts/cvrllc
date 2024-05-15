@@ -12,7 +12,7 @@
 .ourWork {
   margin-top: 100px;
   justify-content: center;
-  font-size: 60px;
+  font-size: 2rem;
   align-items: center;
   color: white;
 }
@@ -93,21 +93,40 @@
 }
 
 /* Gallery.module.css media queries */
-@media (max-width: 2268px) {
-  .embla {
-    max-width: 45%; /* Carousel takes full width */
+@media (max-width: 768px) {
+  .ourWork {
+    font-size: 2rem; /* Smaller font size for mobile */
   }
-  .embla__slide {
-    flex: 0 0 100%; /* Each slide takes full carousel width, only showing one at a time */
+
+  .embla {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .buttonsContainer {
+    bottom: 10px; /* Adjusted bottom position */
+  }
+
+  .customArrow {
+    width: 25px; /* Adjusted width */
+    height: 25px; /* Adjusted height */
   }
 }
 
-
-@media (max-width: 2268px) {
-  .customArrow.prevArrow {
-    left: 55px; /* Adjust as needed */
+@media (max-width: 480px) {
+  .ourWork {
+    font-size: 2rem; /* Even smaller font size for mobile */
   }
-  .customArrow.nextArrow {
-    right: 55px; /* Adjust as needed */
+
+  .embla {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .buttonsContainer {
+    bottom: 5px; /* Adjusted bottom position */
+  }
+
+  .customArrow {
+    width: 20px; /* Adjusted width */
+    height: 20px; /* Adjusted height */
   }
 }

@@ -1,17 +1,12 @@
 /* globals.css */
 html, body {
-  display: flex;
   margin: 0;
   padding: 0;
   background-image: url('/background1.JPG'); /* Path to your background image */
   background-size: cover ; /* Cover the entire page */
   background-attachment: fixed; /* Make background fixed during scroll */
   background-position: center; /* Center the background image */
-  height: 100vh;/* Ensure full height */
-  width: 100vw;
-}
-
-
-
-
-
+  height: 100%;/* Ensure full height */
+  width: 100%;
+  overflow-x: hidden;
+ };

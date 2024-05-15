@@ -29,7 +29,7 @@ const WhyUs = () => {
         </div>
       </div>
       <div className={styles.owensPreferredImage}>
-        <Image src="/owenPreferredContractor.png" alt="owens preferred contractor" width={800} height={400}/>
+        <Image src="/owenPreferredContractor.png" alt="owens preferred contractor" width={300} height={200}/>
       </div>
     </section>
   );

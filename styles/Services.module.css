@@ -1,80 +1,96 @@
 /* Services.module.css */
 
 .services {
-    height: auto;
-    color: white; /* Default text color */
-    padding: 50px 20px; /* Adjust spacing around the content */
-    margin: 200px 200px 300px;
+  height: auto;
+  color: white; /* Default text color */
+  padding: 50px 20px; /* Adjust spacing around the content */
+  margin: 100px 20px; /* Adjusted margin to prevent overflow on smaller screens */
+}
+
+.servicesContent {
+  background-color: rgba(0, 0, 0, 0.705); /* Semi-transparent background */
+  max-width: 1300px; /* Adjust based on your design */
+  margin: auto; /* Center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  border-radius: 10px;
+  height: auto;
+  justify-content: center;
+  background-position: center;
+  padding: 50px;
+}
+
+.header {
+  font-size: 2rem; /* Adjusted font size */
+  margin: 2rem;
+  color: white; /* Main header color */
+  margin-bottom: 20px; /* Spacing between header and subheader */
+}
+
+.subHeader {
+  font-size: 1.5rem; /* Adjusted font size */
+  color: gold; /* Subheader color */
+  margin-bottom: 50px; /* Adjusted spacing between subheader and paragraphs */
+}
+
+.articles {
+  display: flex;
+  flex-direction: column; /* Stack articles vertically */
+  justify-content: space-between; /* Space between paragraphs */
+  width: 100%; /* Ensure paragraphs fill the container */
+  padding-left: 20px;
+  font-size: 1.4rem; /* Adjusted font size */
+}
+
+.article {
+  margin-bottom: 20px; /* Add margin between articles */
+  color: white; /* Paragraph text color */
+}
+
+.servicesButtonContainer {
+  margin-top: 30px; /* Adjusted margin */
+}
+
+.servicesButton, .servicesButton a {
+  background-color: gold; /* Sets the button background to gold */
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #000; /* Sets the button text color to contrast, e.g., black */
+  border: none; /* Removes any default border */
+  padding: 15px 30px; /* Adjust padding as needed */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.servicesButton:hover {
+  background-color: darkgoldenrod; /* Darker gold color on hover for better interaction feedback */
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 30px 10px; /* Adjust padding for smaller screens */
+    margin: 50px 10px; /* Adjust margin for smaller screens */
   }
-  
-  .servicesContent {
-    background-color: rgba(0, 0, 0, 0.705); /* Semi-transparent background */
-    max-width: 1300px; /* Adjust based on your design */
-    margin: auto; /* Center the content */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items vertically */
-    border-radius: 10px;
-    height: auto;
-    justify-content: center;
-    background-position: center;
-    padding: 50px;
-  }
-  
+
   .header {
-    font-size: 35px;
-    margin: 2rem;
-    color: white; /* Main header color */
-    margin-bottom: 20px; /* Spacing between header and subheader */
+    font-size: 2rem; /* Smaller font size for mobile */
   }
-  
+
   .subHeader {
-    font-size: 30px;
-    color: gold; /* Subheader color */
-    margin-bottom: 100px; /* Spacing between subheader and paragraphs */
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin-bottom: 30px; /* Adjusted spacing for mobile */
   }
-  
+
   .articles {
-    display: flex;
-    justify-content: space-between; /* Space between paragraphs */
-    width: 90%; /* Ensure paragraphs fill the container */
-    padding-left: 20px;
-    font-size: 28px;
-  }
-  
-  .article {
-    flex-basis: 48%; /* Each paragraph takes almost half the width, adjust as needed */
-    color: white; /* Paragraph text color */
-  }
-  .servicesButtonContainer {
-    margin-top: 60px;
+    font-size: 1rem; /* Adjust font size for readability */
+    flex-direction: column; /* Stack articles vertically */
   }
 
-  .servicesButton, .servicesButton a{
-    background-color: gold; /* Sets the button background to gold */
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #000; /* Sets the button text color to contrast, e.g., black */
-    border: none; /* Removes any default border */
-    padding: 15px 30px; /* Adjust padding as needed */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  .servicesButton, .servicesButton a {
+    font-size: 1rem; /* Smaller button font size */
+    padding: 10px 20px; /* Adjust button padding */
   }
-
-  .servicesButton:hover {
-    background-color: darkgoldenrod; /* Darker gold color on hover for better interaction feedback */
-  }
-  
-  @media (max-width: 768px) {
-    .articles {
-      flex-direction: column; /* Stack paragraphs vertically */
-    }
-  
-    .article {
-      flex-basis: 100%; /* Each paragraph takes full width */
-      margin-bottom: 20px; /* Add space between stacked paragraphs */
-    }
-  }
-  
+}

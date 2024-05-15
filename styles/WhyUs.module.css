@@ -46,5 +46,51 @@
   .owensPreferredImage {
     margin-top: 100px;
   }
+  @media (max-width: 768px) {
+    .whyUsTitle {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
   
+    .statItem {
+      min-width: 200px; /* Smaller minimum width for mobile */
+      padding: 10px; /* Adjusted padding */
+    }
+  
+    .statItem p {
+      font-size: 0.875rem; /* Smaller font size for mobile */
+    }
+  
+    .statItem strong {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+  
+    .owensPreferredImage {
+      width: 100%; /* Make image responsive */
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .whyUsTitle {
+      font-size: 2rem; /* Even smaller font size for mobile */
+    }
+  
+    .statItem {
+      min-width: 150px; /* Smaller minimum width for mobile */
+      padding: 5px; /* Adjusted padding */
+    }
+  
+    .statItem p {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+  
+    .statItem strong {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+  
+    .owensPreferredImage {
+      width: 100%; /* Make image responsive */
+      height: auto;
+    }
+  }
   

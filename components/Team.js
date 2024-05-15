@@ -12,7 +12,7 @@ const TheTeam = () => {
           <Image src="/Nelson.jpg" alt="First Team Member" className={styles.memberImage} width={200} height={200} />
           <div className={styles.textContainer}>
             <h2>Nelson</h2>
-            <p>Founder/Roofing Specialist</p>
+            <p>Roofing Specialist</p>
           </div>
         </div>
         <div className={styles.teamMember}>
@@ -50,7 +50,7 @@ const TheTeam = () => {
         <div className={styles.teamMember}>
           <div className={styles.textContainer}>
             <h2>Jake</h2>
-            <p>Social Media Manager.</p>
+            <p>Tech Lead</p>
           </div>
           <Image src="/Jake.jpg" alt="Sixth Team Member" className={styles.memberImage} width={200} height={200}/>
         </div>

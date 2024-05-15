@@ -104,6 +104,10 @@
         "seventh";
       width: auto;
     }
+
+    .teamTitle {
+      font-size: 2rem;
+    }
   }
   
   
