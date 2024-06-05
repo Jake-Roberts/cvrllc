@@ -19,10 +19,10 @@ const TheTeam = () => {
             <p className={styles.name}>Rony</p>
             <p className={styles.title}>Roofing Specialist</p>
           </div>
-          <Image src="/RonyOptimized.JPG" alt="Rony" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/RonyOptimized.jpg" alt="Rony" className={styles.memberImage} width={200} height={200}/>
         </div>
         <div className={styles.teamMember}>
-          <Image src="/JoseOptimized.JPG" alt="Jose" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/JoseOptimized.jpg" alt="Jose" className={styles.memberImage} width={200} height={200}/>
           <div className={styles.textContainer}>
             <p className={styles.name}>Jose</p>
             <p className={styles.title}>Roofing Specialist</p>
@@ -50,7 +50,7 @@ const TheTeam = () => {
           <Image src="/DanielleOptimized.jpg" alt="Danielle" className={styles.memberImage} width={200} height={200}/>
         </div>
         <div className={styles.teamMember}>
-          <Image src="/Jake.jpg" alt="Jake" className={styles.memberImage} width={200} height={200}/>
+          <Image src="/JakeOptimized.jpg" alt="Jake" className={styles.memberImage} width={200} height={200}/>
           <div className={styles.textContainer}>
             <p className={styles.name}>Jake</p>
             <p className={styles.title}>Tech Lead</p>

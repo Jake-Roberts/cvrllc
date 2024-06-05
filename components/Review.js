@@ -18,8 +18,8 @@ const GoogleReviewsSection = () => {
                   <iframe 
                     src='https://e1bccc40dca247b392f6c1865c66fae5.elf.site' 
                     width="100%" 
-                    height="350" 
-                    style={{ border: 'none', overflow: 'hidden' }} 
+                    height="100%" 
+                    style={{ border: 'none'}} 
                     scrolling='no' 
                                     
                     allow="encrypted-media">
