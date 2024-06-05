@@ -66,7 +66,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className={styles.hero} style={{ opacity }}>
+        <div id="hero" className={styles.hero} style={{ opacity }}>
             <div className={styles.heroContent}>
                 <h1 className={styles.heroH1}>Get a Free Roof Inspection Today!</h1>
                 <p className={styles.heroP}>Quality Roofing Services you can trust.</p>
@@ -82,7 +82,7 @@ const Hero = () => {
                         <input type="text" name="address_line1" placeholder="Address" required />
                         <input type="text" name="city" placeholder="City" required/>
                         <input type="text" name="state_text" placeholder="State" required/>
-                        <button type="submit" className={styles.heroButton}>Get your Free estimate</button>
+                        <button type="submit" className={styles.heroButton}>Get Your Free Estimate</button>
                     </form>
                 </div>
                 ): (

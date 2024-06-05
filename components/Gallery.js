@@ -45,7 +45,7 @@ const Gallery = ({ images }) => {
     return (
       <>
         <div className={styles.container}>
-          <h1 className={styles.ourWork}>Our Work</h1>
+          <h2 className={styles.ourWork}>Our Work</h2>
           <div className={styles.embla} ref={emblaRef}>
             <div className={styles.embla__container}>
               {images.map((item, index) => (

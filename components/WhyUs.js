@@ -3,33 +3,33 @@ import React from "react";
 import Image from "next/image";
 import styles from "../styles/WhyUs.module.css"; // Make sure the path is correct
 
-import YearsIcon from '../public/homeicon.svg'; // Adjust path
-import PeopleIcon from '../public/peopleicon2.svg'; // Adjust path
-import RoofsIcon from '../public/toolboxicon2.svg'; // Adjust path
+import YearsIcon from '../public/house.svg'; // Adjust path
+import PeopleIcon from '../public/customer.svg'; // Adjust path
+import RoofsIcon from '../public/briefcase.svg'; // Adjust path
 
 const WhyUs = () => {
   return (
-    <section className={styles.whyUsSection}>
-      <h1 className={styles.whyUsTitle}>Why Us!</h1>
+    <section id="whyUS" className={styles.whyUs}>
+      <h2 className={styles.whyUsTitle}>Why Cedar Valley Roofing?</h2>
       <div className={styles.statsContainer}>
         <div className={styles.statItem}>
-          <Image src={YearsIcon} width={400} height={400} alt="Years in Business" className={styles.statIcon} />
-          <p>Years in Business:</p>
-          <strong>3+</strong>
+          <Image src={YearsIcon} width={200} height={200} alt="Years in Business" className={styles.statIcon} />
+          <strong>110+</strong>
+          <p>Roofs Completed</p>
         </div>
         <div className={styles.statItem}>
-          <Image src={PeopleIcon} width={400} height={400} alt="People Served" className={styles.statIcon} />
-          <p>People Served:</p>
-          <strong>110+</strong>
+          <Image src={RoofsIcon} width={200} height={200} alt="Roofs Completed" className={styles.statIcon} />
+          <strong>40+</strong>
+          <p>Communities Served</p>
         </div>
         <div className={styles.statItem}>
-          <Image src={RoofsIcon} width={400} height={400} alt="Roofs Completed" className={styles.statIcon} />
-          <p>Roofs Completed:</p>
+          <Image src={PeopleIcon} width={200} height={200} alt="People Served" className={styles.statIcon} />
           <strong>110+</strong>
+          <p>Happy Homeowners</p>
         </div>
       </div>
       <div className={styles.owensPreferredImage}>
-        <Image src="/owenPreferredContractor.png" alt="owens preferred contractor" width={300} height={200}/>
+        <Image src="/owenPreferredContractor.png" alt="owens preferred contractor" width={800} height={0} style={{width: '100%', height: 'auto'}}/>
       </div>
     </section>
   );

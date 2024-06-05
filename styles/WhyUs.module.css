@@ -1,96 +1,93 @@
-.whyUsSection {
-    height: auto;
-    text-align: center;
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.705);
-    color: white;
-  }
-  
+.whyUs {
+  height: auto;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+}
+
+.whyUsTitle {
+  margin-bottom: 50px;
+}
+
+.statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 25vw;
+  padding: 40px;
+  background-color: rgba(255, 217, 0, 0.701);
+  border-radius: 10px;
+}
+
+.statItem p {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.statItem strong {
+  font-size: 40px;
+  color: black;
+}
+
+.owensPreferredImage {
+  width: 65%; /* Make image responsive */
+  margin: 100px auto 0;
+}
+
+@media (max-width: 768px) {
   .whyUsTitle {
-    margin-bottom: 300px;
+    font-size: 2rem; /* Smaller font size for mobile */
   }
-  
-  .statsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    
-  }
-  
+
   .statItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 350px;
-    height: 500px;
-    padding: 40px;
-    background-color: rgba(255, 217, 0, 0.701);
-    border-radius: 10px;
-
+    min-width: 250px; /* Smaller minimum width for mobile */
+    height: fit-content;
+    padding: 10px; /* Adjusted padding */
   }
-
-  
 
   .statItem p {
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    font-size: 0.875rem; /* Smaller font size for mobile */
   }
 
   .statItem strong {
-    font-size: 25px;
-    color: black;
+    font-size: 1.2rem; /* Smaller font size for mobile */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .whyUsTitle {
+    font-size: 2rem; /* Even smaller font size for mobile */
+  }
+
+  .statItem {
+    width: 100%; /* Smaller minimum width for mobile */
+    padding: 5px; /* Adjusted padding */
+  }
+
+  .statItem p {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .statItem strong {
+    font-size: 40px; /* Smaller font size for mobile */
+  }
+
+  .statItem img {
+    margin-top: 20px;
+  }
+
   .owensPreferredImage {
-    margin-top: 100px;
+    margin: 20px auto;
+    width: 100%;
   }
-  @media (max-width: 768px) {
-    .whyUsTitle {
-      font-size: 2rem; /* Smaller font size for mobile */
-    }
-  
-    .statItem {
-      min-width: 200px; /* Smaller minimum width for mobile */
-      padding: 10px; /* Adjusted padding */
-    }
-  
-    .statItem p {
-      font-size: 0.875rem; /* Smaller font size for mobile */
-    }
-  
-    .statItem strong {
-      font-size: 1.2rem; /* Smaller font size for mobile */
-    }
-  
-    .owensPreferredImage {
-      width: 100%; /* Make image responsive */
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .whyUsTitle {
-      font-size: 2rem; /* Even smaller font size for mobile */
-    }
-  
-    .statItem {
-      min-width: 150px; /* Smaller minimum width for mobile */
-      padding: 5px; /* Adjusted padding */
-    }
-  
-    .statItem p {
-      font-size: 1.2rem; /* Smaller font size for mobile */
-    }
-  
-    .statItem strong {
-      font-size: 1.2rem; /* Smaller font size for mobile */
-    }
-  
-    .owensPreferredImage {
-      width: 100%; /* Make image responsive */
-      height: auto;
-    }
-  }
-  
+}
