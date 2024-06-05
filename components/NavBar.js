@@ -30,7 +30,7 @@ const NavBar = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/" legacyBehavior>
-            <a><Image src="/CedarValleyRoofingLogo2.png" alt="Company Logo" width={150} height={0} style={{height: '100%' }}/></a>
+            <a><Image src="/CedarValleyRoofingLogo2.png" alt="Company Logo" width={150} height={0} style={{width: 'auto', height: '100%' }} priority/></a>
           </Link>
         </div>
       </div>
