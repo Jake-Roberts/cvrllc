@@ -1,113 +1,163 @@
 /* TheTeam.module.css */
-.teamSection {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    gap: 40px;
-    position: relative;
-    text-align: center;
-    color: white;
-    padding: 50px 20px;
-    background-color: rgb(70, 68, 68);
-    
-  }
+.theTeam {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+  background-color: rgb(70, 68, 68);
+}
   
+.teamTitle {
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: white; /* Adjust color as needed */
+}
+
+.teamGrid {
+  margin-bottom: 50px;
+  display: grid;
+  grid-column-gap: 0px;
+  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr); /* Creates more columns for flexibility */
+  grid-template-rows: auto auto; /* Allows rows to size according to content */
+  /* Defining the grid template areas */
+  grid-template-areas:
+    "first ."
+    ". second"
+    "third ."
+    ". fourth"
+    "fifth ."
+    ". sixth"
+    "seventh ."
+}
+
+.teamMember:nth-child(1) { grid-area: first; }
+.teamMember:nth-child(2) { grid-area: second; }
+.teamMember:nth-child(3) { grid-area: third; }
+.teamMember:nth-child(4) { grid-area: fourth; }
+.teamMember:nth-child(5) { grid-area: fifth; }
+.teamMember:nth-child(6) { grid-area: sixth;}
+.teamMember:nth-child(7) { grid-area: seventh;}
+
+.teamMember {
+  display: flex;
+  align-items: center;
+  margin: -20px 0;
+  height: 200px;
+  width: auto;
+}
+
+.teamMember img {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+}
+
+.teamMember:nth-child(1),
+.teamMember:nth-child(3),
+.teamMember:nth-child(5),
+.teamMember:nth-child(7) {
+  justify-content: flex-start;
+}
+
+.teamMember:nth-child(2),
+.teamMember:nth-child(4),
+.teamMember:nth-child(6) {
+  justify-content: flex-end;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column; /* Stacks h2 and p vertically */
+  text-align: center;
+  padding: 0 30px;
+  margin: 0;
+  min-width: fit-content;
+}
+
+.textContainer .name {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.textContainer .title {
+  font-size: 20px;
+  color: gold;
+  margin: 0 auto;
+}
+
+.memberImage {
+  border-radius: 50%; /* Adjust as needed */
+  max-width: 250px; /* Adjust based on your design */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
   .teamTitle {
-    font-size: 60px;
-    margin-bottom: 40px;
-    color: white; /* Adjust color as needed */
+    font-size: 2rem;
+    margin: 0 auto;
   }
 
   .teamGrid {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates more columns for flexibility */
-    grid-template-rows: auto auto auto; /* Allows rows to size according to content */
-    gap: 40px;
-    width: 100%;
-    max-width: 2000px;
-    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth"
+      "sixth"
+      "seventh";
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .teamMember:nth-child(1) { grid-area: first; }
-  .teamMember:nth-child(2) { grid-area: second; }
-  .teamMember:nth-child(3) { grid-area: third; }
-  .teamMember:nth-child(4) { grid-area: fourth; }
-  .teamMember:nth-child(5) { grid-area: fifth; }
-  .teamMember:nth-child(6) { grid-area: sixth;}
-  .teamMember:nth-child(7) { grid-area: seventh;}
-
-/* Defining the grid template areas */
-.teamGrid {
-  grid-template-areas:
-    "first . . ."
-    ". . . second"
-    "third . . ."
-    ". . . fourth"
-    "fifth . . ."
-    ". . . sixth"
-    "seventh . . ."
-}
-  
-  
   .teamMember {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    color: white;
-    max-width: 800px;
+    margin: 0;
+  }
 
+  .teamMember img {
+    width: 200px;
+    height: 200px;
   }
 
   .textContainer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .teamTitle {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .teamGrid {
     display: flex;
-    flex-direction: column; /* Stacks h2 and p vertically */
-    text-align: center;
-    padding: 0 15px ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
   }
 
-  .textContainer h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 0 15px;
-    text-align: center;
-    text-decoration: underline;
-    width: fit-content;
+  .teamMember {
+    height: fit-content;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
-  .textContainer p {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    color: gold;
+  .teamMember img {
+    width: 200px;
+    height: 200px;
   }
-  
-  .memberImage {
-    border-radius: 50%; /* Adjust as needed */
-    max-width: 250px; /* Adjust based on your design */
-    object-fit: cover;
-  }
-   
-  @media (max-width: 768px) {
-    .teamGrid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "first"
-        "second"
-        "third"
-        "fourth"
-        "fifth"
-        "sixth"
-        "seventh";
-      width: auto;
-    }
 
-    .teamTitle {
-      font-size: 2rem;
-    }
+  .teamMember:nth-child(2), .teamMember:nth-child(4), .teamMember:nth-child(6) {
+    flex-direction: column-reverse;
   }
-  
-  
+}

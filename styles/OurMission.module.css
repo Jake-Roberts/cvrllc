@@ -8,13 +8,13 @@
   gap: 20px; /* Optional: Adds space between the image and text */
   width: 100%;
   background-color: rgb(70, 68, 68);
+  padding: 100px 50px;
 }
 
 /* Style adjustments for the missionImage */
 .missionImage {
   flex: 1; /* Takes up half of the space */
   max-width: 50%; /* Ensures it doesn't grow beyond half the container's width */
-  
 }
 
 .missionImage video {
@@ -59,10 +59,17 @@
 @media (max-width: 768px) {
   .ourMission {
     flex-direction: column; /* Stacks the image and text vertically on smaller screens */
+    padding: 5%;
   }
+
   .missionImage, .missionContent {
     max-width: 100%; /* Allows each to take full width of the container on small screens */
   }
+
+  .missionContent {
+    padding: 0;
+  }
+
   .missionContent h2 {
     font-size: 2rem; /* Smaller font size for smaller screens */
   }

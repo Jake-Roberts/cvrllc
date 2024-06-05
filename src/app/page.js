@@ -31,33 +31,19 @@ export default function Home() {
   return (
   <>
     <div>
-      <header className= {styles.navBar}><NavBar /></header>
+      <NavBar />
       <main>
-        <div id="hero" className={styles.hero}>
-          <Hero />
-        </div>
-        <section id="ourMission" className={styles.ourMission}>
-          <OurMission />
-        </section> 
-        <section id="services" className={styles.services}>
-          <Services/>
-        </section>
+        <Hero />
+        <OurMission />
+        <Services/>
         <div id="ourWork" className={styles.gallery}>
           <Gallery images= {imagesList}/>
         </div> 
-        <section id="theTeam" className={styles.theTeam}>
-          <TheTeam />
-        </section>
-        <section id="whyUS" className={styles.whyUs}>
-          <WhyUs />
-        </section>
-        <section id="googleReviews" className={styles.googleReviewsSection}>
-          <GoogleReviewsSection />
-        </section>
+        <TheTeam />
+        <WhyUs />
+        <GoogleReviewsSection />
       </main>
-      <footer id="contact">
-        <Contact/>
-      </footer>
+      <Contact/>
     </div>
   </>
   )

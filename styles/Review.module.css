@@ -26,26 +26,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
     gap: 20px; /* Adjust based on your preference */
-  }
-
-  .reviewsContent {
-    margin-top: 100px;
-  }
-  
-  .reviewsRatings {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the stars and button */
-    width: 100%; /* Takes full width to ensure it's below the header */
-    margin-top: 20px; /* Space between header and rating section */
+    line-height: 1em;
   }
   
   .stars {
     color: gold;
-    font-size: 150px; /* Adjust as needed */
-    margin-bottom: 100px;
+    font-size: 100px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1em;
+  }
+
+  .reviewsContent {
+    margin-top: 20px;
+  }
+  
+   .reviewsEmbed {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 100%; /* Adjust as needed */
+    height: auto;  /*adjust as needed */ 
+    overflow: auto; 
+   } 
+  
+  .reviewButtonWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the stars and button */
+    width: 100%; /* Takes full width to ensure it's below the header */
+    margin-top: 20px;
   }
   
   .reviewButton {
@@ -58,25 +70,15 @@
     cursor: pointer;
     border-radius: 5px;
     width: auto;
-    margin-bottom: 100px;
   }
-  
-   .reviewsEmbed {
-    margin-top: auto;
-    margin-left: auto;
-    margin-bottom: auto;
-    width: 100%; /* Adjust as needed */
-    height: auto;  /*adjust as needed */ 
-    overflow: auto; 
-   } 
   
    @media (max-width: 480px) {
     .reviewsSection h2 {
       font-size: 1.8rem; /* Even smaller font size for mobile */
     }
 
-    .img {
-      width: auto;
+    .reviewsHeader img {
+      width: 50px;
     }
   
     .stars {

@@ -19,17 +19,18 @@
   gap: 20px; /* Adjust the gap between items */
 }
 
-.contactContent h1 {
+.contactContent h2 {
   font-size: 2.5rem; /* Adjusted font size */
-  margin-bottom: 20px; /* Adjusted margin */
+  margin: 20px auto 20px; /* Adjusted margin */
 }
 
 .info {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  justify-content: space-evenly;
   align-items: center; /* Center these items if .info is a column */
   gap: 20px; /* Adjust the gap between info items */
   margin-top: 20px; /* Adjusted margin */
+  width: 100%;
 }
 
 .address {
@@ -64,13 +65,27 @@
   background-color: darkgoldenrod;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+}
+
+.copyright {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .contactContent {
     font-size: 1.2rem; /* Smaller font size for mobile */
   }
 
-  .contactContent h1 {
+  .contactContent h2 {
     font-size: 2rem; /* Smaller font size for mobile */
   }
 
@@ -90,13 +105,14 @@
     font-size: 1rem; /* Smaller font size for mobile */
   }
 
-  .contactContent h1 {
+  .contactContent h2 {
     font-size: 1.5rem; /* Smaller font size for mobile */
   }
 
   .info {
     gap: 10px; /* Adjust gap for mobile */
     margin-top: 10px; /* Adjust margin for mobile */
+    flex-direction: column;
   }
 
   .estimateBtn, .estimateBtn a {

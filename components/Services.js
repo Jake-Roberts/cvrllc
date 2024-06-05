@@ -6,10 +6,10 @@ import styles from "../styles/Services.module.css"
 
 const Services = () => {
     return (
-        <section className={styles.services}>
+        <section id="services" className={styles.services}>
             <div className={styles.servicesContent}>
-                <h1 className={styles.header}>Our Services </h1>
-                <h3 className={styles.subHeader}>Do you Know the condition of your roof?</h3>
+                <h2 className={styles.header}>Our Services </h2>
+                <p className={styles.subHeader}>Do you know the condition of your roof?</p>
                 <div className={styles.articles}>
                     <article className={styles.article}>Cedar Valley Roofing offers a wide range of top-notch roofing solutions to cater to your needs. Our services include:
                         <br/> - Roof Installation and Replacement

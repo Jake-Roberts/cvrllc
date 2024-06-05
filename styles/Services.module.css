@@ -9,7 +9,8 @@
 
 .servicesContent {
   background-color: rgba(0, 0, 0, 0.705); /* Semi-transparent background */
-  max-width: 1300px; /* Adjust based on your design */
+  width: 80%;
+  max-width: 1500px; /* Adjust based on your design */
   margin: auto; /* Center the content */
   display: flex;
   flex-direction: column;
@@ -63,6 +64,7 @@
   padding: 15px 30px; /* Adjust padding as needed */
   cursor: pointer; /* Changes the cursor to a pointer on hover */
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none;
 }
 
 .servicesButton:hover {
@@ -71,22 +73,30 @@
 
 @media (max-width: 768px) {
   .services {
-    padding: 30px 10px; /* Adjust padding for smaller screens */
-    margin: 50px 10px; /* Adjust margin for smaller screens */
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    margin: 20px 0; /* Adjust margin for smaller screens */
+  }
+
+  .servicesContent {
+    width: fit-content;
+    padding: 20px;
   }
 
   .header {
     font-size: 2rem; /* Smaller font size for mobile */
+    margin: 0 auto;
   }
 
   .subHeader {
     font-size: 1.5rem; /* Smaller font size for mobile */
-    margin-bottom: 30px; /* Adjusted spacing for mobile */
+    text-align: center;
+    margin: 0 auto 30px; /* Adjusted spacing for mobile */
   }
 
   .articles {
     font-size: 1rem; /* Adjust font size for readability */
     flex-direction: column; /* Stack articles vertically */
+    padding: 0;
   }
 
   .servicesButton, .servicesButton a {
