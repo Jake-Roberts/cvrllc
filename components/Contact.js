@@ -5,7 +5,6 @@ import InstagramLogo from '../public/InstagramLogo.svg'
 import faceBookIcon from '../public/facebookIcon.svg'
 import youtubeIcon from '../public/youtubeIcon2.svg'
 
-
 const Contact = () => {
   return (
     <>
