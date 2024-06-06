@@ -50,7 +50,7 @@ const NavBar = () => {
         </ul>
       </nav>
       {/* Hamburger Icon */}
-      <button className={`${styles.hamburger} ${isOpen ? styles.change : ''}`} onClick={() => setIsOpen(!isOpen)}>
+      <button aria-label='navigation menu button' className={`${styles.hamburger} ${isOpen ? styles.change : ''}`} onClick={() => setIsOpen(!isOpen)}>
           {/* Icon or text for menu toggle */}
         <span></span>
         <span></span>

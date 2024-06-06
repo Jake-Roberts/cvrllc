@@ -51,7 +51,7 @@ const Gallery = ({ images }) => {
               {images.map((item, index) => (
                 <div className={styles.embla__slide} key={index}>
                 {item.type === 'image' ? (
-                  <img src={item.url} alt={images.alt} className={styles.embla__image}/>
+                  <img src={item.url} alt={item.alt} className={styles.embla__image}/>
                 ) : (
                   <video controls className={styles.embla__image}>
                     <source src={item.url} type="video/mp4"/>

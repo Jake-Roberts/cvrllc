@@ -20,8 +20,8 @@ const GoogleReviewsSection = () => {
                     width="100%" 
                     height="100%" 
                     style={{ border: 'none'}} 
-                    scrolling='no' 
-                                    
+                    scrolling='no'
+                    title='Google reviews gallery'
                     allow="encrypted-media">
                   </iframe>
               </div> 

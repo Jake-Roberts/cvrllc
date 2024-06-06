@@ -10,7 +10,10 @@ export const metadata = {
   title: 'Cedar Valley Roofing LLC',
   description: `Southern Utah's highest quality roofing company. Our all-star team delivers superior quality and craftsmanship. Trust us for your roofing needs, large or small!
 `,
-  viewport: 'width=device-width, initial-scale=1.0',
+  viewport: {
+    width: 'device-width',
+    initial: 'scale=1.0'
+  },
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
