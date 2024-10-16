@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import styles from "../styles/Services.module.css"
 
-
-
 const Services = () => {
     return (
         <section id="services" className={styles.services}>

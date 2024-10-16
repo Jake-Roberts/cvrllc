@@ -1,9 +1,7 @@
-
 'use client'
 import React, {useRef, useEffect, useCallback} from "react";
 import  useEmblaCarousel  from 'embla-carousel-react';
 import styles from '../styles/Gallery.module.css';
-
 
 const Gallery = ({ images }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: true, align: 'center',});

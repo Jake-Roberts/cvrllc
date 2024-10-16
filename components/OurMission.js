@@ -3,8 +3,6 @@ import Image from "next/image";
 import styles from "../styles/OurMission.module.css"
 import { useEffect, useRef } from "react";
 
-
-
 const OurMission = () => {
     
     return (
